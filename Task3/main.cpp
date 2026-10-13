@@ -24,6 +24,8 @@ int main()
     // Заполняем вектор
     parallel_for(0, N, [&x](int n) { x[n] = cos(n); });
     std::vector<float> v(x);
+
+    std::cout << "III.\n";
     
     auto start = std::chrono::steady_clock::now();
     std::sort(v.begin(), v.end());

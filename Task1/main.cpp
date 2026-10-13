@@ -42,6 +42,8 @@ int main() {
     }
     std::vector<float> vec(X);
 
+    std::cout << "II.\n";
+
     std::cout << "std::transform:\n";
 
     auto start = std::chrono::steady_clock::now();

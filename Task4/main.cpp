@@ -28,6 +28,8 @@ int main()
     });
     std::vector<float> v(x);
 
+    std::cout << "IV.\n";
+
     auto start = std::chrono::steady_clock::now();
     std::sort(v.begin(), v.end());
     auto end = std::chrono::steady_clock::now();
